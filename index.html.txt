@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio - Minimalist Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 頂部導覽列 (Navigation) -->
+    <nav>
+        <div class="logo">JANEY WONG</div>
+        <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 頭條大相/封面 (Hero Section) -->
+    <header class="hero">
+        <h1>Creating digital spaces with nature and precision.</h1>
+        <p>Interactive Designer & Developer</p>
+    </header>
+
+    <!-- 作品展示區 (Portfolio Grid) -->
+    <section id="work" class="gallery">
+        <div class="project-card">
+            <img src="your-image-1.jpg" alt="Project 1">
+            <h3>Project Title One</h3>
+        </div>
+        <div class="project-card">
+            <img src="your-image-2.jpg" alt="Project 2">
+            <h3>Project Title Two</h3>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- 作品展示區 (Portfolio Grid) -->
+    <section id="work" class="gallery">
+        <div class="project-card">
+   <img src="https://hospitalitysnapshots.com/wp-content/uploads/sites/3/2026/02/20250905-NOW-Cullinan-Sky-0379-v1-copy.jpg" alt="Cullinan Sky Project">
+            <img src="your-image-1.jpg" alt="Cullinan Sky">
+            <h3>Sky Garden / 30F & 31F</h3>
+        </div>
