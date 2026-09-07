@@ -194,3 +194,155 @@ nav {
     padding: 0; /* 覆蓋之前嘅 padding */
     width: 100%;
 }
+
+/* ==========================================
+   NavBar 基礎排版與高亮
+   ========================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+/* ==========================================
+   About Page (山本耀司風格雙欄 CV)
+   ========================================== */
+.cv-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 40px 100px 40px;
+}
+
+.cv-section {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 40px 0;
+}
+
+/* 左欄 */
+.left-col {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-col h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.sub-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: #666;
+}
+
+.year {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* 右欄 */
+.right-col {
+  padding-left: 40px;
+  border-left: 1px solid #1a1a1a;
+}
+
+/* Hero 排版 */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  font-size: 1.8rem;
+  letter-spacing: 0.3em;
+  font-weight: 600;
+}
+
+.profile-img {
+  width: 280px;
+  height: 360px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.main-title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+}
+
+.bio-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 480px;
+  color: #333;
+}
+
+.cv-item {
+  margin-bottom: 32px;
+}
+
+.cv-item:last-child {
+  margin-bottom: 0;
+}
+
+.cv-item h3 {
+  font-size: 1.1rem;
+  margin: 0 0 6px 0;
+  font-weight: 600;
+}
+
+.cv-item .date {
+  font-size: 0.8rem;
+  color: #777;
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.cv-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* 手機版響應式縮放 */
+@media (max-width: 768px) {
+  .cv-section {
+    grid-template-columns: 1fr;
+  }
+  .right-col {
+    padding-left: 0;
+    border-left: none;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+}

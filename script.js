@@ -22,3 +22,27 @@ document.querySelectorAll('.project-card').forEach(card => {
     observer.observe(card);
 });
 
+// 滾動漸變動畫 (Scroll Fade-in Animation)
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".cv-section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  sections.forEach((section) => {
+    section.style.opacity = "0";
+    section.style.transform = "translateY(20px)";
+    section.style.transition = "all 0.8s cubic-bezier(0.16, 1, 0.3, 1)";
+    observer.observe(section);
+  });
+});
+
